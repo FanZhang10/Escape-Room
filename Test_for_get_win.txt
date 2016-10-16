@@ -1,0 +1,71 @@
+1 ?- instructions.
+
+Night, you prepare going to sleep,
+suddenly the power is shut down,
+everywhere is dark now,
+you need to find your baby, he is crying!!
+
+Enter commands using standard Prolog syntax.
+Available commands are:
+instructions.                   -- to start the game.
+move(Dir).                              -- to go in that direction.
+pickup(Object).          -- to pick up an object.
+drop(Object).            -- to put down an object.
+eat(Object).             -- to eat an object.
+look.                    -- to look around you again.
+turnon(Object).         -- to control the lights.
+turnoff(Object).                -- to control the lights.
+
+You are in bridge
+enter e, You can go to office
+
+true.
+
+2 ?- move(e).
+You have moved to office.
+You are in office
+enter n, You can go to garden
+enter s, You can go to diningroom
+
+There is a flashlight on the ground.
+true.
+
+3 ?- move(s).
+You have moved to diningroom.
+You are in diningroom
+enter n, You can go to laundryroom
+enter s, You can go to bedroom
+enter e, You can go to bathroom
+enter w, You can go to kitchen
+
+There is a milk on the ground.
+true.
+
+4 ?- pickup(milk).
+You have picked it up.
+You are in diningroom
+enter n, You can go to laundryroom
+enter s, You can go to bedroom
+enter e, You can go to bathroom
+enter w, You can go to kitchen
+
+true.
+
+5 ?- move(s).
+You have moved to bedroom.
+You are in bedroom
+enter n, You can go to diningroom
+enter e, You can go to livingroom
+enter w, You can go to kidsroom
+
+true.
+
+6 ?- move(w).
+You have moved to kidsroom.
+You are in kidsroom
+enter e, You can go to bedroom
+
+There is a baby on the ground.
+
+Yeah, you find your baby, let's give him some milk you win.
+true.
